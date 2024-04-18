@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Scaling -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon -->
+    <link rel="icon" href="/Users/harshit/B.TechMajorProject/LandingPage/assets/favicon_io/android-chrome-192x192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/Users/harshit/B.TechMajorProject/LandingPage/assets/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/Users/harshit/B.TechMajorProject/LandingPage/assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/Users/harshit/B.TechMajorProject/LandingPage/assets/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/Users/harshit/B.TechMajorProject/LandingPage/assets/favicon_io/site.webmanifest">
+    <!-- Stylesheets -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>CSS: HomePage</title>
+  </head>
+
+  <body onload="bodyLoaded()">
+    <div class="preloader"></div>
+
+    <div class="scrollToTop"></div>
+
+    <nav>
+      <div class="container">
+        <div class="brand">
+          <div class="logo">
+            <img src="assets/CSSlogo.png" width="192×65"alt="" />
+          </div>
+          <div class="responsive-toggle">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+
+        <div class="links">
+          <ul>
+
+            <li><a href="#about" id="nav-link">Overview</a></li>
+
+            <li><div class=dropdown><a href="#about" id="nav-link">Covid-19 <i class="fa fa-caret-down"></i></a>
+                  <div class="dropdown-content">
+                    <a href="#contagion" id="nav-link">Contagion</a>
+                    <a href="#symptoms" id="nav-link">Symptoms</a>
+                    <a href="#solution" id="nav-link">Prevention</a>
+                  </div>
+                </div>
+            </li>
+
+            <!-- <li><a href="/Users/harshit/B.TechMajorProject/HelplinePage/index.html" id="nav-link" >Support</a></li> -->
+            <li><div class=dropdown><a id="nav-link">Support <i class="fa fa-caret-down"></i></a>
+                  <div class="dropdown-content">
+                    <a href="/Users/harshit/B.TechMajorProject/HelplinePage/index.html" id="nav-link">Helpline Numbers</a>
+                    <a href="https://us14.list-manage.com/contact-form?u=6628dd539765893985e2aface&form_id=57e8c36c0ba2882eb9ad9629ea8355a6" id="nav-link">Get Immediate Help</a>
+                    <a href="https://aarogyasetu.gov.in/applink/" id="nav-link">Get Aarogya Setu App</a>
+                  </div>
+                </div>
+            </li>
+
+            <li><a href=" http://localhost:3000" id="nav-link">Live Stats</a></li>
+
+            <li><button onclick="window.location.href='https://selfregistration.cowin.gov.in/';">Register/Login</button></li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+
+    <section class="starter">
+      <div class="info">
+        <!-- <h3 class="subTitle">COVID-19 Alert</h3> -->
+        <h1 class="title">Why Hesitate? <br> Get Vaccinated Today!</h1>
+        <h5 class="description">
+          The reason to get a vaccine is to prevent people from getting severely sick after getting affected from Covid SARS virus.
+          <br>
+          A short period of discomfort is a whole lot better than a visit to the ICU.
+        </h5>
+        <button onclick="window.location.href='/Users/harshit/B.TechMajorProject/FAQsPage/index.html';">FAQ</button>
+      </div>
+      <div class="image">
+        <img src="assets/starter.png" alt="" />
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="image">
+        <img src="assets/whatIsCovid.png" alt="" />
+      </div>
+      <div class="info">
+        <h4 class="subTitle" >All you want to know about</h4>
+        <h2 class="title">Covid-19 Support System</h2>
+        <p class="description">
+          Exclusively designed for the government and respected citizens to simplify the COVID - 19 Vaccination process.
+          The CSS system will ensure that the vaccination process will be done systematically and efficiently.
+          Our team is committed to privacy and being transparent about government requests for customer data globally.
+        </p>
+        <button onclick="window.location.href='/Users/harshit/B.TechMajorProject/LearnMorePage/index.html';">Learn More</button>
+      </div>
+    </section>
+
+    <section class="contagion" id="contagion">
+      <div class="info">
+        <!-- <h4 class="subTitle">Covid-19</h4> -->
+        <h2 class="title">Contagion</h2>
+        <p class="description">
+          Coronavirus disease (COVID-19) is an infectious disease caused by the SARS-CoV-2 virus. Corona virus can easily be transmitted by these actions:
+        </p>
+      </div>
+      <div class="content">
+        <div class="cards">
+          <div class="card">
+            <img src="assets/airTransmission.png" alt="" />
+            <div class="text">
+              <h3 class="title">Air Transmission</h3>
+              <p class="description">
+                Covid SARS virus can easily travel through air.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="assets/humanContact.png" alt="" />
+            <div class="text">
+              <h3 class="title">Human Contacts</h3>
+              <p class="description">
+                Coming in direct contact with an infected person can cause the disease to spread.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="assets/containedObject.png" alt="" />
+            <div class="text">
+              <h3 class="title">Sharing eatables</h3>
+              <p class="description">
+                Sharing drinks with an infected person can spread the virus.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="symptoms" id="symptoms">
+      <div class="info">
+        <!-- <h4 class="subTitle">Covid-19</h4> -->
+        <h2 class="title">Symptoms</h2>
+        <p class="description">
+          Signs and symptoms of coronavirus disease 2019 (COVID-19) may appear 2 to 14 days after exposure. This time after exposure and before having symptoms is called the incubation period. You can still spread COVID-19 before you have symptoms (presymptomatic transmission). Common signs and symptoms can include:
+        </p>
+      </div>
+      <div class="image">
+        <img src="assets/symptoms.png" alt="" />
+      </div>
+    </section>
+    <section class="solutions" id="solution">
+      <div class="virus">
+        <img src="assets/virus3.png" alt="" />
+      </div>
+      <div class="virus2">
+        <img src="assets/virus1.png" alt="" />
+      </div>
+      <div class="virus3">
+        <img src="assets/virus4.png" alt="" />
+      </div>
+
+      <div class="info">
+        <!-- <h4 class="subTitle">Covid-19</h4> -->
+        <h2 class="title">What Should We Do <span>?</span></h2>
+        <p class="description">
+          The virus can spread from an infected person in small liquid particles when they cough or sneeze. These particles range from larger respiratory droplets to smaller aerosols.
+          <br>Prevention of spreading of Covid virus is as easy as 4 steps:
+        </p>
+      </div>
+      <div class="content">
+        <div class="solution">
+          <div class="solution-info">
+            <!-- <div class="round">01</div> -->
+            <div class="info-container">
+              <h2 class="title">Wear Masks</h2>
+              <p class="description">
+                Wear a face mask in indoor public spaces if you're in an area with a high number of people with COVID-19 in the hospital and new COVID-19 cases, whether or not you're vaccinated. The CDC recommends wearing the most protective mask possible that you'll wear regularly, fits well and is comfortable.
+              </p>
+            </div>
+          </div>
+          <div class="image">
+            <img src="assets/girl1.png" alt="" />
+          </div>
+        </div>
+        <div class="solution">
+          <div class="image">
+            <img src="assets/girl2.png" alt="" />
+          </div>
+          <div class="solution-info">
+            <!-- <div class="round">02</div> -->
+            <div class="info-container">
+              <h2 class="title">Wash your hands</h2>
+              <p class="description">
+                Wash your hands often with soap and water for at least 20 seconds, or use an alcohol-based hand sanitizer that contains at least 60% alcohol. Avoid touching your eyes, nose and mouth.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="solution">
+          <div class="solution-info">
+            <!-- <div class="round">03</div> -->
+            <div class="info-container">
+              <h2 class="title">Use Nose - Rag</h2>
+              <p class="description">
+                Cover your mouth and nose with your elbow or a tissue when you cough or sneeze. Throw away the used tissue. Wash your hands right away.
+              </p>
+            </div>
+          </div>
+          <div class="image">
+            <img src="assets/girl3.png" alt="" />
+          </div>
+        </div>
+        <div class="solution">
+          <div class="image">
+            <img src="assets/girl4.png" alt="" />
+          </div>
+          <div class="solution-info">
+            <!-- <div class="round">04</div> -->
+            <div class="info-container">
+              <h2 class="title">Avoid Contacts</h2>
+              <p class="description">
+                Keep distance between yourself and others when you're in indoor public spaces. This is especially important if you have a higher risk of serious illness. Keep in mind some people may have COVID-19 and spread it to others, even if they don't have symptoms or don't know they have COVID-19.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <span class="copyright"></span><center class="copyright"> &copy; 2023 All rights reserved by CSS</center>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/script.js"></script>
+    <script>!function(e,t,a){var c=e.head||e.getElementsByTagName("head")[0],n=e.createElement("script");n.async=!0,n.defer=!0, n.type="text/javascript",n.src=t+"/static/js/widget.js?config="+JSON.stringify(a),c.appendChild(n)}(document,"https://app.engati.com",
+    {bot_key:"83fef4e43b5c4526",welcome_msg:true,branding_key:"default",server:"https://app.engati.com",e:"p" });</script>
+
+  </body>
+</html>
